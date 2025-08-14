@@ -1,0 +1,17 @@
+<!-- views/grievance.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grievance Details</title>
+</head>
+<body>
+  <h1>Grievance Details</h1>
+  <p><strong>Title:</strong> <%= grievance.title %></p>
+  <p><strong>Description:</strong> <%= grievance.description %></p>
+  <p><strong>Location:</strong> <%= grievance.location %></p>
+  <p><strong>Status:</strong> <%= grievance.status %></p>
+  <% if (grievance.media) { %>
+    <p><img src="/uploads/<%= grievance.media %>" alt="Grievance Image" style="max-width:300px;" /></p>
+  <% } %>
+</body>
+</html>
